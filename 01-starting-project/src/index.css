@@ -18,13 +18,48 @@ body {
   flex: 1;
   display: flex;
   border: 1px solid #ddd;
+  background-color: #f0f0f5;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  height: 100vh;
+  margin: 0;
 }
 
 .cv-container {
   flex: 1;
   display: flex;
+
   border: 1px solid #ddd;
   justify-content: center; /* Center horizontally */
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-container label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
 }
 
 .resume {
