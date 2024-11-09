@@ -1,11 +1,14 @@
 export default function DisplayOutput({ input }) {
   return (
     <>
-      <p>
-        Name : {input.firstName} <br />
-      </p>
-
-      <p>LastName : {input.lastName}</p>
+      <div className="header">
+        <h1>
+          {input.firstName} {input.lastName}
+        </h1>
+        <p>
+          Phone: {input.phoneNumber} | Email: {input.email}
+        </p>
+      </div>
     </>
   );
 }
