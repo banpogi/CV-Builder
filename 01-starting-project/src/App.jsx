@@ -132,7 +132,7 @@ function App() {
             <EducationEntries entries={educationEntries} />
             <WorkExpEntries entries={workExpEntries} />
           </div>
-          <button onClick={handleDownloadPDF}>Download as PDF</button>
+          {/* <button onClick={handleDownloadPDF}>Download as PDF</button> */}
         </div>
       </div>
     </>

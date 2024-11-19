@@ -11,7 +11,6 @@ body {
 
 #root {
   display: flex;
-  height: 100vh;
 }
 
 .info-container {
@@ -19,10 +18,11 @@ body {
   display: flex;
   border: 1px solid #ddd;
   background-color: #f0f0f5;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   padding-top: 10px;
-  height: 100vh;
+
   margin: 0;
 }
 
@@ -34,7 +34,7 @@ body {
   justify-content: center; /* Center horizontally */
 }
 
-.form-container {
+/* .form-container {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -60,9 +60,10 @@ body {
   border-radius: 4px;
   font-size: 14px;
   transition: border-color 0.3s;
-}
+} */
 
 .resume {
+  height: 100vh;
   width: 700px;
   background-color: #fff;
   border-radius: 8px;
@@ -107,4 +108,87 @@ body {
 .info-item p {
   font-size: 14px;
   color: #555;
+}
+
+.form-container2 {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 0;
+  outline: none;
+  color: #333;
+}
+
+/* Styling for the underline */
+input:focus {
+  border-bottom-color: #007bff;
+}
+
+/* Optional: Styling for empty fields */
+input:not(:placeholder-shown):invalid {
+  border-bottom-color: red;
+}
+
+.form-container2 h3 {
+  text-align: center;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-save {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #28a745; /* Green text color */
+  background-color: transparent; /* No background initially */
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-save:hover {
+  background-color: #28a745; /* Green background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.btn-add {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #80bfff; /* Green text color */
+  background-color: transparent; /* No background initially */
+  border: 2px solid #80bfff; /* Green border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-add:hover {
+  background-color: #80bfff; /* Green background on hover */
+  color: #fff; /* White text color on hover */
 }
